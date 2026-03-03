@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-sdtv-red: #CC0000;
+  --color-sdtv-yellow: #F5C400;
+  --color-sdtv-blue: #1A2E5A;
+  --color-sdtv-dark: #111827;
+  --color-sdtv-darker: #0a0f1a;
+  --color-sdtv-light: #F9FAFB;
+
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animação de pulso para o botão flutuante do WhatsApp */
+@keyframes pulse-whatsapp {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+  }
+}
+
+.whatsapp-pulse {
+  animation: pulse-whatsapp 2s infinite;
+}
