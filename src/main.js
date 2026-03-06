@@ -1,37 +1,25 @@
 import './style.css'
-import { config } from '../config.js'
+import { navbar } from './sections/navbar.js'
+import { hero } from './sections/hero.js'
+import { services } from './sections/services.js'
+import { diferenciais } from './sections/diferenciais.js'
+import { sobre } from './sections/sobre.js'
+import { pagamento } from './sections/pagamento.js'
+import { contato } from './sections/contato.js'
+import { footer } from './sections/footer.js'
+import { floatButton } from './sections/float-button.js'
 
-// ── Links do WhatsApp e Telefone ──────────────────────────────────────────────
-const whatsappUrl = `https://wa.me/55${config.whatsapp}`
-const telUrl = `tel:${config.telefone.replace(/\D/g, '')}`
-
-const whatsappLinks = [
-  document.getElementById('nav-whatsapp'),
-  document.getElementById('mobile-whatsapp'),
-  document.getElementById('hero-whatsapp'),
-  document.getElementById('contato-whatsapp'),
-  document.getElementById('float-whatsapp'),
-]
-
-whatsappLinks.forEach(el => {
-  if (el) el.href = whatsappUrl
-})
-
-const telLinks = [
-  document.getElementById('hero-tel'),
-  document.getElementById('contato-tel'),
-]
-
-telLinks.forEach(el => {
-  if (el) el.href = telUrl
-})
-
-// Exibe o número formatado nos cards de contato
-const whatsappNum = document.getElementById('contato-whatsapp-num')
-if (whatsappNum) whatsappNum.textContent = config.telefone.replace(/\D/g, '').replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3')
-
-const telNum = document.getElementById('contato-tel-num')
-if (telNum) telNum.textContent = config.telefone
+// Montar e injetar o HTML
+document.getElementById('app').innerHTML =
+  navbar() +
+  hero() +
+  services() +
+  diferenciais() +
+  sobre() +
+  pagamento() +
+  contato() +
+  footer() +
+  floatButton()
 
 // ── Menu mobile (hamburguer) ──────────────────────────────────────────────────
 const menuBtn = document.getElementById('menu-btn')
@@ -46,13 +34,11 @@ menuBtn?.addEventListener('click', () => {
   menuOpen = !menuOpen
   mobileMenu.classList.toggle('hidden', !menuOpen)
 
-  // Animação das barras → X
   bar1.style.transform = menuOpen ? 'translateY(8px) rotate(45deg)' : ''
   bar2.style.opacity = menuOpen ? '0' : '1'
   bar3.style.transform = menuOpen ? 'translateY(-8px) rotate(-45deg)' : ''
 })
 
-// Fecha o menu ao clicar em um link interno
 mobileMenu?.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', () => {
     menuOpen = false
