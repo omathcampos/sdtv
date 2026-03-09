@@ -1,14 +1,14 @@
 import { config } from '../../config.js'
+import logoTransparente from '../assets/logo s fundo.png'
 
 const whatsappUrl = `https://wa.me/55${config.whatsapp}`
 
 export function navbar() {
   return `
     <nav class="fixed top-0 left-0 right-0 z-50 bg-sdtv-bg/95 backdrop-blur-sm shadow-lg border-b border-white/5">
-      <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
-        <a href="#hero" class="flex items-center gap-2">
-          <span class="text-sdtv-yellow font-extrabold text-xl tracking-wide">SDTV</span>
-          <span class="text-sdtv-light text-sm font-medium hidden sm:block">Assistência Técnica</span>
+      <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-20">
+        <a href="#hero" class="flex items-center flex-shrink-0">
+          <img src="${logoTransparente}" alt="SDTV Assistência Técnica" class="h-12 w-auto" />
         </a>
 
         <ul class="hidden md:flex items-center gap-6 text-sm font-medium text-sdtv-light/80">
