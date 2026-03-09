@@ -1,17 +1,16 @@
 import { config } from '../../config.js'
+import logoComFundo from '../assets/logo-com-fundo.png'
 
 const whatsappUrl = `https://wa.me/55${config.whatsapp}`
 const telUrl = `tel:${config.telefone.replace(/\D/g, '')}`
 
 export function hero() {
   return `
-    <section id="hero" class="min-h-screen flex items-center justify-center pt-16"
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-20"
              style="background: linear-gradient(135deg, #060c1a 0%, #0d1b3e 55%, #0a1428 100%);">
       <div class="text-center px-4 max-w-2xl mx-auto">
         <div class="mb-8 flex justify-center">
-          <div class="w-36 h-36 rounded-full bg-sdtv-red flex items-center justify-center shadow-2xl">
-            <span class="text-sdtv-yellow font-extrabold text-4xl tracking-widest drop-shadow">SDTV</span>
-          </div>
+          <img src="${logoComFundo}" alt="SDTV Assistência Técnica" class="w-56 h-56 object-contain drop-shadow-2xl" />
         </div>
 
         <h1 class="text-4xl md:text-5xl font-extrabold text-sdtv-light mb-4 leading-tight">
