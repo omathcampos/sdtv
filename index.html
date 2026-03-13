@@ -4,21 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BVC0PJ7E3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1BVC0PJ7E3');
+    </script>
+
     <!-- SEO básico -->
     <title>SDTV Assistência Técnica — Conserto de TV e Microondas em Santos, SP</title>
     <meta name="description" content="Conserto de TV Plasma, LCD, LED e Forno Microondas em Santos-SP. Retirada, orçamento e entrega gratuitos. Mais de 20 anos de experiência. Ligue ou chame no WhatsApp!" />
-    <meta name="keywords" content="assistência técnica TV Santos, conserto TV Santos SP, reparo microondas Santos, TV plasma LCD LED Santos, SDTV assistência" />
+    <meta name="keywords" content="assistência técnica TV Santos, conserto TV Santos SP, reparo microondas Santos, TV plasma LCD LED Santos, SDTV assistência, conserto TV Guarujá, conserto TV São Vicente, conserto TV Cubatão, assistência técnica Baixada Santista" />
     <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0d1b3e" />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="canonical" href="https://sdtvsantos.com.br/" />
+    <link rel="canonical" href="https://www.sdtvsantos.com.br/" />
+
+    <!-- Geo tags (reforço de localização) -->
+    <meta name="geo.region" content="BR-SP" />
+    <meta name="geo.placename" content="Santos" />
+    <meta name="geo.position" content="-23.9608;-46.3336" />
+    <meta name="ICBM" content="-23.9608, -46.3336" />
 
     <!-- Open Graph (WhatsApp, Facebook, etc.) -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sdtvsantos.com.br/" />
-    <meta property="og:title" content="SDTV Assistência Técnica — Santos, SP" />
+    <meta property="og:url" content="https://www.sdtvsantos.com.br/" />
+    <meta property="og:title" content="SDTV Assistência Técnica — Conserto de TV e Microondas em Santos, SP" />
     <meta property="og:description" content="Conserto de TV e Microondas em Santos. Retirada, orçamento e entrega gratuitos. Mais de 20 anos de experiência!" />
+    <meta property="og:image" content="https://www.sdtvsantos.com.br/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="SDTV Assistência Técnica — Conserto de TV e Microondas em Santos" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="SDTV Assistência Técnica" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="SDTV Assistência Técnica — Santos, SP" />
+    <meta name="twitter:description" content="Conserto de TV e Microondas em Santos. Retirada, orçamento e entrega gratuitos. Mais de 20 anos de experiência!" />
+    <meta name="twitter:image" content="https://www.sdtvsantos.com.br/og-image.png" />
 
     <!-- Schema.org — LocalBusiness (lido pelo Google) -->
     <script type="application/ld+json">
@@ -27,8 +53,15 @@
       "@type": "LocalBusiness",
       "name": "SDTV Assistência Técnica",
       "description": "Conserto de TV Plasma, LCD, LED e Forno Microondas em Santos-SP. Retirada, orçamento e entrega gratuitos.",
-      "url": "https://sdtvsantos.com.br",
-      "telephone": "+551330000000",
+      "url": "https://www.sdtvsantos.com.br",
+      "telephone": "+5513997700671",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+5513997700671",
+        "contactType": "customer service",
+        "contactOption": "TollFree",
+        "availableLanguage": "Portuguese"
+      },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Santos",
@@ -40,10 +73,17 @@
         "latitude": -23.9608,
         "longitude": -46.3336
       },
-      "areaServed": {
-        "@type": "City",
-        "name": "Santos"
-      },
+      "areaServed": [
+        { "@type": "City", "name": "Santos" },
+        { "@type": "City", "name": "Guarujá" },
+        { "@type": "City", "name": "São Vicente" },
+        { "@type": "City", "name": "Cubatão" },
+        { "@type": "City", "name": "Praia Grande" },
+        { "@type": "City", "name": "Bertioga" },
+        { "@type": "City", "name": "Itanhaém" },
+        { "@type": "City", "name": "Mongaguá" },
+        { "@type": "City", "name": "Peruíbe" }
+      ],
       "priceRange": "$$",
       "sameAs": [
         "https://instagram.com/sdtvsantos"
@@ -61,6 +101,64 @@
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Conserto de Forno Microondas" } }
         ]
       }
+    }
+    </script>
+
+    <!-- Schema.org — FAQ (aparece no Google como accordion expansível) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto custa o conserto de TV em Santos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O orçamento é completamente gratuito e sem compromisso. O valor do conserto varia conforme o problema e o modelo da TV. Entre em contato pelo WhatsApp para uma avaliação."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vocês consertam TV de qualquer marca?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, consertamos TVs de todas as marcas: Samsung, LG, Sony, Philips, Panasonic, TCL, AOC, Hisense e outras. Também atendemos todas as tecnologias: Plasma, LCD, LED, OLED, QLED e Smart TV."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A retirada e entrega da TV é gratuita?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim! A retirada, orçamento e entrega são completamente gratuitos — porém o serviço de retirada e entrega é realizado somente na cidade de Santos, SP."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Consertam forno microondas em Santos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, realizamos conserto de fornos microondas de todas as marcas e modelos em Santos, SP."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Atendem clientes de Guarujá, São Vicente, Cubatão e outras cidades da Baixada Santista?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, atendemos clientes de toda a Baixada Santista: Guarujá, São Vicente, Cubatão, Praia Grande, Bertioga, Itanhaém, Mongaguá e Peruíbe. O cliente traz o aparelho até Santos ou, para clientes de Santos, oferecemos retirada e entrega gratuitas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual o prazo para conserto da TV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O prazo depende do tipo de reparo e disponibilidade de peças. Na maioria dos casos o conserto é realizado em poucos dias. Entre em contato para mais informações."
+          }
+        }
+      ]
     }
     </script>
 

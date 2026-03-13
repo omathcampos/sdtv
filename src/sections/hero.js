@@ -1,5 +1,5 @@
 import { config } from '../../config.js'
-import logoComFundo from '../assets/logo-com-fundo.png'
+import logoComFundo from '../assets/sdtv-redonda-vermelha.png'
 
 const whatsappUrl = `https://wa.me/55${config.whatsapp}`
 const telUrl = `tel:${config.telefone.replace(/\D/g, '')}`
