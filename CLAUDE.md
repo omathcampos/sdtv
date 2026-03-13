@@ -29,3 +29,7 @@ This is a **vanilla JS + Tailwind CSS v4 static site** built with Vite. No frame
 **Assets:** Logo images live in `src/assets/` — `logo-com-fundo.png` (used in hero with background) and `logo-sem-fundo.png` (used in navbar, transparent).
 
 **No routing, no state management, no build-time templating** — the entire site is a single HTML page with anchor-based navigation (`#servicos`, `#diferenciais`, etc.).
+
+**DOM event listeners** are wired in `src/main.js` after the full HTML is injected — specifically the mobile hamburger menu toggle. Any new interactive behavior should follow this same pattern: render HTML in the section function, attach listeners in `main.js`.
+
+**`src/counter.js`** is an unused Vite scaffold leftover — it can be ignored or deleted.
