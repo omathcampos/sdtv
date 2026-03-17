@@ -1,6 +1,6 @@
 import { config } from '../../config.js'
 
-const whatsappUrl = `https://wa.me/55${config.whatsapp}`
+const whatsappUrl = config.whatsappUrl
 
 export function floatButton() {
   return `
