@@ -1,7 +1,7 @@
 import { config } from '../../config.js'
 import logoTransparente from '../assets/logo s fundo.png'
 
-const whatsappUrl = `https://wa.me/55${config.whatsapp}`
+const whatsappUrl = config.whatsappUrl
 
 export function navbar() {
   return `

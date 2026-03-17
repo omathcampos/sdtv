@@ -1,6 +1,6 @@
 import { config } from '../../config.js'
 
-const whatsappUrl = `https://wa.me/55${config.whatsapp}`
+const whatsappUrl = config.whatsappUrl
 const telUrl = `tel:${config.telefone.replace(/\D/g, '')}`
 const whatsappFormatted = config.whatsapp.replace(/^(\d{2})(\d{5})(\d{4})$/, '($1) $2-$3')
 
@@ -41,8 +41,9 @@ export function contato() {
             </div>
           </a>
 
-          <div class="flex flex-col items-center gap-4 bg-white/5 border border-white/10 rounded-2xl p-8">
-            <div class="w-16 h-16 rounded-full bg-sdtv-red/10 flex items-center justify-center">
+          <a href="${config.enderecoMaps}" target="_blank" rel="noopener"
+             class="flex flex-col items-center gap-4 bg-white/5 border border-white/10 hover:border-sdtv-red/50 hover:bg-white/10 rounded-2xl p-8 transition-all group">
+            <div class="w-16 h-16 rounded-full bg-sdtv-red/10 flex items-center justify-center group-hover:bg-sdtv-red/20 transition-colors">
               <svg class="w-8 h-8 text-sdtv-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -50,10 +51,9 @@ export function contato() {
             </div>
             <div class="text-center">
               <p class="text-sdtv-light font-bold text-lg">Localização</p>
-              <p class="text-sdtv-light/50 text-sm mt-1">Santos - SP</p>
-              <p class="text-sdtv-light/30 text-xs mt-1">Endereço em breve</p>
+              <p class="text-sdtv-light/50 text-sm mt-1">${config.endereco}</p>
             </div>
-          </div>
+          </a>
 
         </div>
       </div>

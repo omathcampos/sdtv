@@ -1,9 +1,9 @@
 export function footer() {
   return `
-    <footer class="bg-sdtv-darker py-8 border-t border-white/5">
+    <footer class="bg-sdtv-bg py-8 border-t border-white/5">
       <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
         <p class="text-sdtv-light/40 text-sm text-center">
-          © 2025 SDTV Assistência Técnica — Santos, SP
+          © 2026 SDTV Assistência Técnica — Santos, SP
         </p>
         <a href="https://instagram.com/sdtvsantos" target="_blank" rel="noopener"
            class="flex items-center gap-2 text-sdtv-light/40 hover:text-sdtv-light/70 transition-colors text-sm">
