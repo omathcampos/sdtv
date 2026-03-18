@@ -1,7 +1,7 @@
 const whatsappMsg = encodeURIComponent('Olá! Vim pelo site e gostaria de solicitar um orçamento.')
 
 export const config = {
-  whatsapp: '13991408184',
+  whatsapp: '13997700671',
   get whatsappUrl() { return `https://wa.me/55${this.whatsapp}?text=${whatsappMsg}` },
   telefone: '(13) 3301-0346',
   endereco: 'Rua Doutor Antonio Bento, 85 — Santos, SP',
