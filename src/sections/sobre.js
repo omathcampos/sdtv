@@ -10,7 +10,7 @@ export function sobre() {
               Quem <span class="text-sdtv-yellow">somos</span>
             </h2>
             <p class="text-sdtv-light/70 text-base md:text-lg leading-relaxed mb-5">
-              Com mais de <strong class="text-sdtv-light">20 anos de experiência</strong> em Santos,
+              Com <strong class="text-sdtv-light">anos de experiência</strong> em Santos,
               a SDTV é referência no conserto de televisores e microondas de todas as marcas.
               Nossa equipe técnica é altamente qualificada para diagnosticar e resolver
               problemas com agilidade e precisão.
