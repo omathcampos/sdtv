@@ -1,7 +1,7 @@
 const items = [
   {
     title: 'Retirada Gratuita',
-    desc: 'Buscamos o seu aparelho sem custo adicional.',
+    desc: 'Buscamos o seu aparelho sem cobrar pela retirada.',
     icon: `<svg class="w-7 h-7 text-sdtv-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"/>
     </svg>`,
@@ -15,7 +15,7 @@ const items = [
   },
   {
     title: 'Entrega Gratuita',
-    desc: 'Devolvemos o aparelho consertado na sua porta, sem taxa.',
+    desc: 'Devolvemos o aparelho consertado na sua porta sem cobrar pela entrega.',
     icon: `<svg class="w-7 h-7 text-sdtv-yellow" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/>
     </svg>`,
