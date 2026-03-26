@@ -23,7 +23,7 @@ export function hero() {
         </p>
 
         <p class="text-sdtv-light/50 text-sm md:text-base mb-10">
-          Retirada · Orçamento · Entrega — <span class="text-sdtv-yellow font-semibold">tudo gratuito</span>. Preço justo.
+          Retirada · Orçamento · Entrega — <span class="text-sdtv-yellow font-semibold">sem cobrança</span>. Conserto com preço justo.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
